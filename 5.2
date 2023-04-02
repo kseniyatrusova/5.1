@@ -1,0 +1,15 @@
+a = [1,2,2,4,847,9,6,76,3,4,5,56,445,6,45,6,45,5,46,54,6,4]
+b = []
+for i in a:
+    count = 0
+    for x in a:
+        if x == i:
+            count +=1
+    b.append(count)
+c = set()
+index = 0
+while index<len(a):
+    if b[index]!=1:
+        c.add(a[index])
+    index+=1
+print(c)
